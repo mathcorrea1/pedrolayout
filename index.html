@@ -1,54 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  <style>
-    .is-inline-block {
-      display: inline-block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c0f3a3fc8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Cadastro</title>
 </head>
+
 <body>
-  <header class="hero is-light">
-    <div class="hero-body">
-      <div class="container">
-        <div class="field is-grouped">
-          <p class="control">
-            <button class="button is-info is-light">Pesquisar</button>
-          </p>
-          <p class="control is-inline-block"> <!-- Modificação: Adicionado a classe is-inline-block -->
-            <button class="button is-primary is-light">
-              <span class="has-text-primary-dark">Cadastro de usuário</span>
-            </button>
-          </p>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section>
-        <div class="cards--alunos">
-          <div class="info--alunos">
-              <input type="checkbox">
-              <div class="img--aluno"><i class="fa-solid fa-user"></i></div>
-                <img src="caminho/para/imagem-do-aluno.jpg" alt="Imagem do Aluno">
-              <ul>
-                  <li>Nome: Teste</li>
-                  <li>E-Mail: teste@gmail.com</li>
-                  <li>Idade: 17</li>
-                  <li>Senha: *****</li>
-              </ul>
-          </div>
-          <div class="field is-grouped is-justify-end">
-            <p class="control">
-              <button class="button is-danger">Excluir</button>
-            </p>
-            <p class="control">
-              <button class="button is-primary">Editar</button>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <header class="nav">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Página Principal</a></li>
+                <hr>
+                <li><a href="#">Cadastro</a></li>
+            </ul>
+            <div class="buttons-sign">
+                <button id="login" class="button is-primary">Login</button>
+                <button id="cadastro" class="button is-primary">Cadastro</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="search--usuarios">
+                <input type="search" name="myInput" placeholder="Buscar Usuário" size="20px" required>
+                <button class="botao--buscar button is-primary">Buscar</button>
+                <button onclick="acao()" class="botao--cadastro button is-primary">Cadastrar</button>
+                <hr>
+            </div>
+        </section>
+
+        <section>
+            <div class="alunos">
+                <div class="cards--alunos">
+                    <div class="info--alunos">
+                        <input type="checkbox">
+                        <div class="img--aluno"><i class="fas fa-user"></i></div>
+                        <ul>
+                            <li>Nome: Teste</li>
+                            <li>E-Mail: teste@gmail.com</li>
+                            <li>Idade: 17</li>
+                            <li>Senha: *****</li>
+                        </ul>
+                    </div>
+                    <div class="botoes--editar">
+                        <button class="btn--apagar button is-danger"><i class="fas fa-trash"></i></button>
+                        <button class="btn--editar button is-primary"><i class="fas fa-pencil-alt"></i></button>
+                    </div>
+                </div>
+                <div class="cards--alunos">
+                    <div class="info--alunos">
+                        <input type="checkbox">
+                        <div class="img--aluno"><i class="fas fa-user"></i></div>
+                        <ul>
+                            <li>Nome: Teste</li>
+                            <li>E-Mail: teste@gmail.com</li>
+                            <li>Idade: 17</li>
+                            <li>Senha: *****</li>
+                        </ul>
+                    </div>
+                    <div class="botoes--editar">
+                        <button class="btn--apagar button is-danger"><i class="fas fa-trash"></i></button>
+                        <button class="btn--editar button is-primary"><i class="fas fa-pencil-alt"></i></button>
+                    </div>
+                </div>
+                <div class="cards--alunos">
+                    <div class="info--alunos">
+                        <input type="checkbox">
+                        <div class="img--aluno"><i class="fas fa-user"></i></div>
+                        <ul>
+                            <li>Nome: Teste</li>
+                            <li>E-Mail: teste@gmail.com</li>
+                            <li>Idade: 17</li>
+                            <li>Senha: *****</li>
+                        </ul>
+                    </div>
+                    <div class="botoes--editar">
+                        <button class="btn--apagar button is-danger"><i class="fas fa-trash"></i></button>
+                        <button class="btn--editar button is-primary"><i class="fas fa-pencil-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
