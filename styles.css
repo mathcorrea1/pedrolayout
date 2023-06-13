@@ -9,10 +9,10 @@ body {
 }
 
 .navbar {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0.5rem;
+    margin-left:35%;
 }
 
 .navbar ul {
@@ -41,6 +41,7 @@ body {
     border-radius: 10px;
     border: none;
     font-family: 'Poppins', sans-serif;
+    margin-right:10px;
 }
 
 #cadastro {
@@ -51,8 +52,62 @@ body {
     border: none;
     font-family: 'Poppins', sans-serif;
 }
-section{
-    display:grid;
-    grid-column: auto;
-    grid-row: auto;
+.info--alunos{
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
+.botoes--editar{
+    justify-content: end;
+}
+.botao--cadastro{
+    margin-top:40px;
+    margin-left:800px;
+}
+.search--usuarios input {
+    margin-top:40px;
+    margin-left:2%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 2px solid #296FA8;
+    border-radius: 0.625rem;
+    padding: 0.3125rem;
+}
+.botao--buscar{
+    margin-top:35px;
+    margin-left:10px;
+}
+.cards--alunos {
+    display: flex;
+    align-items: center;
+  }
+  
+  .info--alunos {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .info--alunos .img--aluno {
+    margin-right: 30px;
+  }
+  
+  .info--alunos .info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info--alunos .info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }  
+  .botoes--editar {
+    margin-left: auto;
+  }
+  .img--aluno{
+    margin-left:30px;
+  }
+  
