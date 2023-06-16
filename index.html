@@ -32,7 +32,7 @@
             <div class="search--usuarios">
                 <input type="search" name="myInput" placeholder="Buscar Usuário" size="20px" required>
                 <button class="botao--buscar button is-primary">Buscar Usuário</button>
-                <button onclick="acao()" class="botao--cadastro button is-primary">Cadastrar Usuário</button>
+                <button onclick="abrirModal()" class="botao--cadastro button is-primary">Cadastrar Usuário</button>
                 <hr>
             </div>
         </section>
@@ -40,20 +40,20 @@
         <section>
             <div class="alunos">
                 <div class="cards--alunos">
-                  <div class="info--alunos">
-                    <input type="checkbox">
-                    <div class="img--aluno"><i class="fas fa-user fa-3x"></i></div>
-                    <div class="info">
-                      <div>
-                        <span>Nome: Teste</span>
-                        <span>E-Mail: teste@gmail.com</span>
-                      </div>
-                      <div>
-                        <span>Idade: 17</span>
-                        <span>Senha: *****</span>
-                      </div>
+                    <div class="info--alunos">
+                        <input type="checkbox">
+                        <div class="img--aluno"><i class="fas fa-user fa-3x"></i></div>
+                        <div class="info">
+                            <div>
+                                <span>Nome: Teste</span>
+                                <span>E-Mail: teste@gmail.com</span>
+                            </div>
+                            <div>
+                                <span>Idade: 17</span>
+                                <span>Senha: *****</span>
+                            </div>
+                        </div>
                     </div>
-                  </div>    
                     <div class="botoes--editar">
                         <button class="btn--apagar button is-danger"><i class="fas fa-trash"></i></button>
                         <button class="btn--editar button is-primary"><i class="fas fa-pencil-alt"></i></button>
@@ -65,16 +65,16 @@
                         <input type="checkbox">
                         <div class="img--aluno"><i class="fas fa-user fa-3x"></i></div>
                         <div class="info">
-                          <div>
-                            <span>Nome: Teste</span>
-                            <span>E-Mail: teste@gmail.com</span>
-                          </div>
-                          <div>
-                            <span>Idade: 17</span>
-                            <span>Senha: *****</span>
-                          </div>
+                            <div>
+                                <span>Nome: Teste</span>
+                                <span>E-Mail: teste@gmail.com</span>
+                            </div>
+                            <div>
+                                <span>Idade: 17</span>
+                                <span>Senha: *****</span>
+                            </div>
                         </div>
-                      </div>     
+                    </div>
                     <div class="botoes--editar">
                         <button class="btn--apagar button is-danger"><i class="fas fa-trash"></i></button>
                         <button class="btn--editar button is-primary"><i class="fas fa-pencil-alt"></i></button>
@@ -86,16 +86,16 @@
                         <input type="checkbox">
                         <div class="img--aluno"><i class="fas fa-user fa-3x"></i></div>
                         <div class="info">
-                          <div>
-                            <span>Nome: Teste</span>
-                            <span>E-Mail: teste@gmail.com</span>
-                          </div>
-                          <div>
-                            <span>Idade: 17</span>
-                            <span>Senha: *****</span>
-                          </div>
+                            <div>
+                                <span>Nome: Teste</span>
+                                <span>E-Mail: teste@gmail.com</span>
+                            </div>
+                            <div>
+                                <span>Idade: 17</span>
+                                <span>Senha: *****</span>
+                            </div>
                         </div>
-                      </div>                      
+                    </div>
                     <div class="botoes--editar">
                         <button class="btn--apagar button is-danger"><i class="fas fa-trash"></i></button>
                         <button class="btn--editar button is-primary"><i class="fas fa-pencil-alt"></i></button>
@@ -104,8 +104,67 @@
             </div>
         </section>
     </main>
+    <div id="modalCadastro" class="modal modal--cadastro">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <div class="columns">
+                    <div class="column">
+                        <div class="file is-centered">
+                            <label class="file-label">
+                                <input class="file-input" type="file" name="imagemUsuario">
+                                <span class="file-cta">
+                                    <span class="file-icon">
+                                        <i class="fas fa-upload"></i>
+                                    </span>
+                                    <span class="file-label">Adicionar imagem</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Nome:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Digite o nome do usuário">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Idade:</label>
+                            <div class="control">
+                                <input class="input" type="number" placeholder="Digite a idade do usuário">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">E-mail:</label>
+                            <div class="control">
+                                <input class="input" type="email" placeholder="Digite o e-mail do usuário">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Senha:</label>
+                            <div class="control">
+                                <input class="input" type="password" placeholder="Digite a senha do usuário">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="field is-grouped is-pulled-right">
+                    <div class="control">
+                        <button class="button is-light" onclick="fecharModal()">Cancelar</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-primary">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="fecharModal()" class="modal-close is-large" aria-label="close"></button>
+    </div>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
